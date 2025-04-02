@@ -19,7 +19,8 @@ public class ReactiveDemoController {
     public static void main(String[] args){
         new ReactiveDemoController().getItems()
                 .log()
-                .subscribe(item->System.out.println("Received: " + item));
+                .subscribe();
+                //.subscribe(item->System.out.println("Received: " + item));
     }
 
 }
